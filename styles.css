@@ -1,0 +1,92 @@
+﻿@font-face {
+    font-family: 'ProductSans'; 
+    src: url('./ProductSans-Black.ttf'); 
+}
+@font-face {
+    font-family: 'Roboto'; 
+    src: url('./Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'GoodTimes'; 
+    src: url('./good times rg.ttf');
+}
+body
+{
+  /*background-image: url('./bg.jpg') ;*/
+  background-attachment: fixed;
+}
+h1 {
+  color: black;
+  font-family: ProductSans;
+  font-size: 1;
+}
+h2 {
+  color: black;
+  font-family: ProductSans;
+  font-size: 200%;
+}
+h3 {
+  color: black;
+  font-family: ProductSans;
+  font-size: 100;
+}
+p  {
+  text-indent: 20px;
+  color: #111111;
+  font-family: Roboto;
+  font-size: 160%;
+}
+div.header  {
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+}
+a:link, a:visited {
+  transition: all 0.2s ease;
+  color: #111111;
+  font-family: ProductSans;
+  text-decoration: none;
+  cursor: auto;
+  font-size: 100;
+}
+td.text{
+  backdrop-filter: blur(2px);
+}
+button.top{
+    transition: all 0.2s ease;
+	border-radius: 12px;
+	padding: 16px;
+	font-size: 24px;
+	font-family: ProductSans;
+	background-color: white;
+	border: none;
+	width: 80%;
+}
+button.top:hover{
+    transition: all 0.2s ease;
+	background-color: #fefefe;
+	box-shadow: 0px 0px 13px 6px rgba(247,247,247,1);
+
+}
+button.top:active{
+    transition: all 0.2s ease;
+	background-color: #fefefe;
+	box-shadow: 0px 0px 5px 6px rgba(247,247,247,1);
+	border: none;
+
+}
+h1.negative{
+	font-family: GoodTimes;
+	font-size: 69px;
+	color: #363636;
+	margin-top: 10px;
+    margin-bottom: 2px;
+}
+h1.delta{
+	font-family: GoodTimes;
+	font-size: 69px;
+	color: #1ede00;
+	margin-top: 2px;
+    margin-bottom: 10px;
+}
