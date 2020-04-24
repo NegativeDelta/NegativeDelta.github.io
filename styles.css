@@ -203,4 +203,9 @@
     img.delta{
         content: url("./image.png");
     }
+
+}
+div.underconstruction{
+    vertical-align: middle;
+    height: 500px;
 }
