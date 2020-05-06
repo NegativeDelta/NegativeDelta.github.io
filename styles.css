@@ -2,14 +2,17 @@
     font-family: "ProductSans";
     src: url("./ProductSans-Black.ttf");
 }
+
 @font-face {
     font-family: "Roboto";
     src: url("./Roboto-Regular.ttf");
 }
+
 @font-face {
     font-family: "GoodTimes";
     src: url("./good times rg.ttf");
 }
+
 @media (prefers-color-scheme: dark) {
     body {
         /*background-image: url('./bg.jpg') ;*/
@@ -90,7 +93,7 @@
         font-family: GoodTimes;
         font-size: 69px;
         color: #ffffff;
-        margin-top: 10px;
+        margin-top: 1px;
         margin-bottom: 2px;
     }
     h1.delta {
@@ -104,10 +107,11 @@
         width: 0.5px;
         background-color: #444444;
     }
-    img.delta{
+    img.delta {
         content: url("./image2.png");
     }
 }
+
 @media (prefers-color-scheme: light) {
     body {
         /*background-image: url('./bg.jpg') ;*/
@@ -186,7 +190,7 @@
         font-family: GoodTimes;
         font-size: 69px;
         color: #363636;
-        margin-top: 10px;
+        margin-top: 1px;
         margin-bottom: 2px;
     }
     h1.delta {
@@ -200,9 +204,23 @@
         width: 0.5px;
         background-color: #cccccc;
     }
-    img.delta{
+    img.delta {
         content: url("./image.png");
     }
-
 }
 
+div.delta {
+    vertical-align: middle;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+}
+
+div.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
