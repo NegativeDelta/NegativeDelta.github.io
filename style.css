@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+}
+
+#title {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #00000000;
+}
+
+#scrolldown {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    height: 95vh;
+    z-index: -1;
+    vertical-align: bottom;
+}
+
+#background-video {
+    position: fixed;
+    z-index: -2;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 50px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Kanit';
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff42;
+    font-family: 'Kanit';
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#menu {
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    -webkit-box-shadow: 0px -5px 50px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -5px 50px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -15px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+#howtfdoimakeamarginwithoutbreakingthealignment {
+    height: 42vh;
+}
+
+button {
+    border-radius: 0;
+    border: #00000000;
+    color: white;
+    font-family: 'Kanit';
+    font-weight: 600;
+    font-size: 50px;
+    background-color: #0B0A0C;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    margin-top: 25px;
+}
+
+button:hover {
+    width: 100%;
+    transition-duration: 0.5s;
+    background-color: #222222;
+}

@@ -1,0 +1,226 @@
+﻿@font-face {
+    font-family: "ProductSans";
+    src: url("./ProductSans-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "GoodTimes";
+    src: url("./good times rg.ttf");
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        /*background-image: url('./bg.jpg') ;*/
+        background-attachment: fixed;
+        background: #1b1b1b;
+    }
+    h1 {
+        color: white;
+        font-family: ProductSans;
+        font-size: 1;
+    }
+    h2 {
+        color: white;
+        font-family: ProductSans;
+        font-size: 200%;
+    }
+    h3 {
+        color: white;
+        font-family: ProductSans;
+        font-size: 100;
+    }
+    p {
+        text-indent: 20px;
+        color: #eeeeee;
+        font-family: Roboto;
+        font-size: 160%;
+    }
+    div.header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+    }
+    a:link,
+    a:visited {
+        transition: all 0.5s ease;
+        color: #eeeeee;
+        font-family: ProductSans;
+        text-decoration: none;
+        cursor: auto;
+        font-size: 100;
+    }
+    td.text {
+        backdrop-filter: blur(2px);
+    }
+    button.top {
+        transition: all 0.5s ease;
+        border-radius: 12px;
+        padding: 16px;
+        font-size: 24px;
+        font-family: ProductSans;
+        color: white;
+        background-color: #1b1b1b;
+        border: none;
+        width: 18%;
+        display: inline-block;
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    button.top:hover {
+        transition: all 0.5s ease;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 13px 6px rgb(83, 83, 83);
+        color: black;
+        /*font-size: 26px;*/
+    }
+    button.top:active {
+        transition: all 0.5s ease;
+        background-color: #c5c5c5;
+        box-shadow: 0px 0px 13px 6px rgb(145, 145, 145);
+        color: black;
+    }
+    h1.negative {
+        font-family: GoodTimes;
+        font-size: 69px;
+        color: #ffffff;
+        margin-top: 1px;
+        margin-bottom: 2px;
+    }
+    h1.delta {
+        font-family: GoodTimes;
+        font-size: 69px;
+        color: #1ede00;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    td.verticalline {
+        width: 0.5px;
+        background-color: #444444;
+    }
+    img.delta {
+        content: url("./image2.png");
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        /*background-image: url('./bg.jpg') ;*/
+        background-attachment: fixed;
+        background: white;
+    }
+    h1 {
+        color: black;
+        font-family: ProductSans;
+        font-size: 1;
+    }
+    h2 {
+        color: black;
+        font-family: ProductSans;
+        font-size: 200%;
+    }
+    h3 {
+        color: black;
+        font-family: ProductSans;
+        font-size: 100;
+    }
+    p {
+        text-indent: 20px;
+        color: #111111;
+        font-family: Roboto;
+        font-size: 160%;
+    }
+    div.header {
+        text-align: center;
+        margin-bottom: 50px;
+        color: black;
+        font-size: 30px;
+        display: inline-block;
+        width: 100%;
+        height: 150px;
+    }
+    a:link,
+    a:visited {
+        transition: all 0.5s ease;
+        color: #111111;
+        font-family: ProductSans;
+        text-decoration: none;
+        cursor: auto;
+        font-size: 100;
+    }
+    td.text {
+        backdrop-filter: blur(2px);
+    }
+    button.top {
+        transition: all 0.5s ease;
+        border-radius: 12px;
+        padding: 16px;
+        font-size: 24px;
+        font-family: ProductSans;
+        background-color: rgb(255, 255, 255);
+        border: none;
+        width: 18%;
+        display: inline-block;
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    button.top:hover {
+        transition: all 0.5s ease;
+        background-color: #fefefe;
+        box-shadow: 0px 0px 13px 6px rgba(247, 247, 247, 1);
+        /*font-size: 26px;*/
+    }
+    button.top:active {
+        transition: all 0.5s ease;
+        background-color: #fefefe;
+        box-shadow: 0px 0px 5px 6px rgba(247, 247, 247, 1);
+        border: none;
+    }
+    h1.negative {
+        font-family: GoodTimes;
+        font-size: 69px;
+        color: #363636;
+        margin-top: 1px;
+        margin-bottom: 2px;
+    }
+    h1.delta {
+        font-family: GoodTimes;
+        font-size: 69px;
+        color: #1ede00;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    td.verticalline {
+        width: 0.5px;
+        background-color: #cccccc;
+    }
+    img.delta {
+        content: url("./image.png");
+    }
+}
+
+div.delta {
+    vertical-align: middle;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    text-align: center;
+}
+
+div.content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
