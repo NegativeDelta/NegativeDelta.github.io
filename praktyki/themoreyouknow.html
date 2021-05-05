@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themoreyouknow.css">
+    <link href="prism.css" rel="stylesheet" />
+    <title>The more you know</title>
+
+</head>
+
+<body>
+    <video src="bg3.mp4" type="video/mp4" autoplay loop id="bg-video"></video>
+    <!-- <header><a href="http://sp.otrebusy.edu.pl" id="back">&lt wróć do strony Szkoły</a>
+        <h1>SEKCJA / LEKCJA SPECJALNA: JAK UŻYWAĆ CSS</h1>
+
+    </header> -->
+    <main>
+
+        <h2>
+            Co to jest CSS?
+        </h2>
+        <!-- <div class="full-width" class="code-container">
+
+            <div class="code-header">
+                <h5 class="code-header-text">CSS</h5>
+            </div>
+            <pre class="code"><code class="language-css">.code-container {
+    float: right;
+    /* min-height: 200px;
+    min-width: 200px; */
+    background-color: #313131;
+    border-radius: 20px;
+    margin: 15px;
+    font-family: 'Cutive Mono', monospace;
+    -webkit-box-shadow: 0px 0px 50px 0px #000000;
+    box-shadow: 0px 0px 15px 0px #00000042;
+}</code></pre>
+        </div> -->
+
+        <p>Z lekcji informatyki wiesz już pewnie co to jest język HTML. No więc w skrócie, CSS (kaskadowy arkusz stylów) jest rozszerzeniem HTMLa. Pozwala on na bardziej zaawansowane ‘dekorowanie’ strony. Wraz z trzecim filarem stron internetowych, czyli
+            JavaScriptem, pozwala on tworzyć bajeczne efekty, takich jak
+            <a href="https://thelabberkeley.com/" target=”_blank”>theLAB Berkeley</a> ,
+            <a href="https://play2.studiogusto.com/" target="_blank">GUSTO.PLAY (studiogusto.com)</a> , albo
+            <a href="https://flipaclip.com/" target="_blank">Flipaclip</a>.
+        </p>
+        <img src="lab.jpg" alt="Strona theLAB" class="shadow">
+        <h6>Strona theLAB</h6>
+        <hr>
+        <h2>
+            Wygląda to na trudne zadanie
+        </h2>
+
+        <p>Ten poradnik nie pozwoli Ci uzyskać aż takich efektów jak w podlinkowanych stronach, bo to byłoby za trudne na poziomie szkoły podstawowej. Postaram się jednak jak najlepiej wytłumaczyć fundamentalne zastosowania CSSa i jak z jego pomocą zrobić
+            schludną i estetyczną stronę.</p>
+        <hr>
+        <h2>
+            W czym pisać takie strony internetowe?
+        </h2>
+        <img src="code_icon.svg" alt="Logo programu Visual Studio Code" class="code-icon">
+        <p>W szkole poznałæś narzędzie pod nazwą Notepad++. Nie jest on bynajmniej narzędziem złym, jednak o wiele lepszy do tego celu jest program Visual Studio Code Microsoftu (tak, tego Microsoftu od Windowsa), którego najnowszą wersję można pobrać
+            <a href="https://code.visualstudio.com/download" target="_blank">tu</a>. Proces instalacji jest prosty. Jeśli masz z nim problemy, poproś o pomoc rodzica. Visual Studio Code to bezpłatny program do pisania kodu, w tym HTML i CSS. Posiada on
+            multum opcji, od których naprawdę ciężko jest się odzwyczaić.</p>
+        <hr>
+        <h2>No to do dzieła!</h2>
+        <img class="float" src="pliki.jpg" alt="Pliki index.html i style.css">
+        <p>Utwórzmy nowy folder na naszą stronę i utwórzmy w nim dwa pliki: <span class="inline-code">index.html</span> i <span class="inline-code">style.css</span>. Zaznaczmy je, kliknijmy na nie PPM i wybierzmy opcję Open With Code. Ukaże nam się okno
+            naszego świeżo zainstalowanego programu. Zauważmy, że na górze widoczne są karty z nazwami plików, które utworzyliśmy. Możemy te karty dowolnie przeciągać i ustawiać. Zróbmy tak, żeby po lewej stronie znajdował się nasz plik .html, a po prawej
+            plik .css. Ok. No i co teraz? Piszemy podstawową strukturę pliku HTML? Nic bardziej mylnego. Piszemy po prostu <span class="inline-code">!</span> i klikamy enter. VSC sam rozpisze nam najpotrzebniejsze elementy strony.</p>
+        <hr>
+        <h2>Dołączanie pliku CSS</h2>
+        <p>Nasza strona nie widzi od razu naszego arkusza stylów. Musimy jej ‘pokazać’ gdzie się on znajduje. W tym celu w headzie musimy wpisać:
+            <div class="full-width" class="code-container">
+
+                <div class="code-header">
+                    <h5 class="code-header-text">HTML</h5>
+                </div>
+                <pre class="code"><code class="language-html">&ltlink rel="stylesheet" href="style.css"&gt</code></pre>
+            </div>. </p>
+        <hr>
+        <h2>Proste stylowanie tekstu</h2>
+        <p>Zróbmy teraz prostą stronę. Daj nagłówek <span class="inline-code">&lth1&gt</span>, jakiś tekst w <span class="inline-code">&ltp&gt</span> no i może jakieś zdjęcie. </p>
+        <img src="bajo jajo.jpg" class="shadow">
+        <p>Jak widać, nasza strona wygląda, bądźmy szczerzy, źle. Skopiuj i wklej poniższy kod do pliku CSS.</p>
+        <div class="full-width" class="code-container">
+
+            <div class="code-header">
+                <h5 class="code-header-text">CSS</h5>
+            </div>
+            <pre class="code"><code class="language-css">body {
+    background-color: darkblue;
+}
+
+h1 {
+    color: cyan;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+}</code></pre>
+        </div>
+        <p>Naszym oczom ukazała się ta piękność:</p>
+        <img src="bajo jajo 2.jpg" class="shadow">
+        <hr>
+        <h2>Ale co to wszystko znaczy?</h2>
+        <div class="code-container">
+
+            <div class="code-header">
+                <h5 class="code-header-text">CSS</h5>
+            </div>
+            <pre class="code"><code class="language-css">body {
+    background-color: darkblue;
+}</code></pre></div>
+        <p>Wyłumaczę teraz, co zrobiliśmy.</p>
+
+        <p>Elementowi <span class="inline-code">body</span> (czyli całej widocznej części strony internetowej) ustaliliśmy wartość atrybutu <span class="inline-code">background-color</span> (ang. kolor tła) na <span class="inline-code">darkblue</span> (ang.
+            granatowy)
+        </p>
+
+
+
+        <script src="prism.js"></script>
+</body>
+
+</html>

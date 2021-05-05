@@ -89,13 +89,12 @@ button {
     font-size: 35px;
     background-color: #0B0A0C;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     padding-top: 10px;
     padding-bottom: 10px;
     transition-duration: 0.5s;
     text-decoration: underline;
-    width: 100%;
 }
 
 button:hover {
@@ -115,6 +114,52 @@ nav {
     padding: 0;
 }
 
-#gallery {
+#about-me {
     height: 100vh;
+    background-image: url(wall.jpg);
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    display: inline;
+}
+
+em {
+    font-style: normal;
+    color: #ABFF00;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    width: 35vw;
+    background-color: #cecece;
+    padding: 45px;
+    border-left: #ABFF00 solid 10px;
+}
+
+h4 {
+    font-family: Kanit, sans-serif;
+    text-align: left;
+    font-size: 42px;
+    margin: 0;
+    font-weight: 900;
+}
+
+p {
+    text-align: left;
+    font-family: Kanit, sans-serif;
+    font-size: 21px;
+    margin: 0;
+}
+
+#photo {
+    width: 45vh;
+    margin-right: auto;
 }
